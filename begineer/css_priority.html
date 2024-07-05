@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<!-- 
+1. Internal, External: Which one calling later will be applied
+2. Inline:  1000
+3. #id:      100
+4. .class:    10
+5. tag name:   1
+6. Equal specificity?   -> choose the newest one
+7. Universal selector and inherited?: 0 -> *
+
+!important keyword: 10000 
+
+-->
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Priority</title>
+
+    <link rel="stylesheet" href="css/css_priority.css">
+
+    <!-- Which one calling later will be applied -->
+    <style>
+        h1 {
+            color: red;
+        }
+
+        /* priority score = id + class = 100 + 10 = 110 */
+        #heading-id2.heading2 {     
+            color: blue;
+        }
+
+        /* priority score = id = 100 */
+        #heading-id2{     
+            color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 title="h1 tag">This is the title</h1>
+
+        <h2 id="heading-id2" class="heading2">Heading 2</h2>
+    </div>
+
+
+    <!-- Inherited -->
+    <div class="inherited">
+        <h3>Write about your favorite pet</h3>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis autem quam eaque quidem porro consequatur fuga minus sed recusandae nihil omnis eos delectus, in soluta tempore earum aliquam provident. Cupiditate.</p>
+
+    </div>
+</body>
+
+</html>

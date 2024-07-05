@@ -1,0 +1,23 @@
+/* priority score: 0.5 > inherited */
+* {
+    color: green;
+}
+
+h1 {
+    color: blue;
+}
+
+
+/* Inherited -> priority score = 0 */
+.inherited {
+    color: violet;
+}
+
+/* important: 10000 -> the biggest score */
+p {
+    color: aquamarine !important;
+}
+
+p {
+    color: yellow;
+}

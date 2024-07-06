@@ -1,0 +1,9 @@
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid black;
+    color: white;
+    background-color: yellowgreen;
+    box-sizing: border-box; /* Keep the size of the content match the width and height values */
+}

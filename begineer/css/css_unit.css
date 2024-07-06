@@ -1,0 +1,33 @@
+html {
+    font-size: 12px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.rela-box {
+    /* width: 50%;
+    height: 50%; */
+    width: 50%;
+    height: 100px;
+    background-color: yellowgreen;
+}
+
+.viewport-box {
+    width: 50vw;
+    height: 50vh;
+    background-color: yellow;
+}
+
+h3 {
+    /* = 3 * root (html tag) font-size value = 3 * 12 = 36px */
+    font-size: 3rem; 
+}
+
+h4 {
+    /* Find the container tag style which has font-size value to calculate */
+    font-size: 1em; 
+}

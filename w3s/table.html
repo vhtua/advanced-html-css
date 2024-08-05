@@ -56,20 +56,79 @@
     <h1>Table size</h1>
 
     <style>
-        #table-size th {
+        #table-size th, #table-size td {
             border: 1px solid black;
+        }
+
+        #table-size td {
+            width: 200px;
+            background-color: yellow;
         }
     </style>
 
     <table id="table-size">
         <tr>
             <th>Name</th>
+            <td>Nguyen Van A</td>
+            <td>Nguyen Van B</td>
         </tr>
 
         <tr>
             <th>Age</th>
+            <td>20</td>
+            <td>22</td>
         </tr>
     </table>
+
+
+    <h1>Table headers</h1>
+    <style>
+        .table-header th, .table-header td {
+            border: 1px solid black;
+        }
+    </style>
+
+    <table class="table-header">
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+
+        <tr>
+            <th>Will</th>
+            <th>Smith</th>
+            <th>30</th>
+        </tr>
+
+        <tr>
+            <th>Nana</th>
+            <th>Luna</th>
+            <th>20</th>
+        </tr>
+
+    </table>
+
+    <table class="table-header" style="width: 60%;">
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+
+
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+
+        <tr>
+            <td>February</td>
+            <td>$50</td>
+        </tr>
+    </table>
+
+
+    <h1>Table Padding & Spacing</h1>
 
 </body>
 </html>

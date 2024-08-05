@@ -1,0 +1,51 @@
+html, body {
+    margin: 0;
+}
+
+.header {
+    width: 70%;
+    height: 100vh;
+    background-image: url(../img/vgu_logo.png), url(../img/frauas_logo.png);
+
+    background-size: 40% auto; /* equal to the size of the header*/
+    background-repeat: no-repeat;   /* repeat-x, repeat-y*/
+}
+
+.color-bg {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(30deg, rgba(120, 129, 39, 0.5), #1b24cc5a), url(../img/cute_cat.jpg);
+
+    background-size: 50% auto;
+    background-repeat: repeat-x;
+}
+
+.bg-size {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/white_cat.jpg);
+
+    background-repeat: no-repeat;
+    background-size: contain; /* cover */
+}
+
+.bg-origin {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6yVzpUFpfx4YZOQUpA5URaREz-RCyPRwSIA&s);
+
+    background-repeat: no-repeat;
+    padding: 10px;
+    border: 10px dashed black;
+    box-sizing: border-box;
+    /* margin: 10px; */
+
+    background-origin: content-box; /* where to put the bg-img*/
+}
+
+
+.bg-position {
+    background-position: top right;
+    /* background-position: 50px 100px; */
+}

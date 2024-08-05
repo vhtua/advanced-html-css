@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basic W3S</title>
+
+    <link rel="stylesheet" href="html_w3s.css">
+</head>
+<body>
+    <!-- Headings -->
+    <h1 id="heading-1">Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- Paragraphs -->
+    <p>paragraph</p>
+
+    <hr> horizontal rules
+
+    <br> line breaks
+
+    <pre> preformatted text
+        #include&lt;iostream&gt;
+        using namespace std;
+
+        int main() {
+            cout << "Hello World" << endl;
+            return 0;
+        }
+    </pre>
+        <!-- Link for utf-8 latin basic: https://www.w3schools.com/charsets/ref_utf_basic_latin.asp -->
+
+    <!-- HTML Styles -->
+    <p style="
+        background-color: yellow;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 14;
+        text-align: center;
+    ">This is a styled tab</p>
+    
+
+    <!-- HTML Formatting elements -->
+    <b>Bold text</b> <br>
+    <strong>Important text</strong> <br>
+    <i>Italic text</i> <br>
+    <em>Emphasized text</em> <br>
+    <mark>Marked text</mark> <br>
+    <small>Smaller text</small> <br>
+    <del>Deleted text</del> <br>
+    <ins>Inserted text</ins> <br>
+    <sub>Subscript text</sub> --- Example: H<sub>2</sub>O <br>
+    <sup>Superscript text</sup> --- Example: x<sup>2</sup> = 16<br>
+
+
+    <!-- HTML Quotations -->
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    This is blockquote: For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+    </blockquote>
+
+    <q>This is a quote</q>
+
+    <abbr title="Computer Sciences and Engineering">CSE</abbr>
+
+    <address>This is an address</address>
+
+    <p>This is cite: <cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+
+    <!-- HTML Colors -->
+    <h1 style="background-color:rgb(255, 99, 71);">...</h1>
+    <h1 style="background-color:#ff6347;">...</h1>
+    <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+
+    <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+    <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+
+    <!-- HTML CSS -->
+    <style> 
+        /* Internal CSS */
+        .html-css-1 {
+            width: 200px;
+            height: 20px;
+            color: steelblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 14;
+            border: 3px dashed #ff6347;
+            padding: 5px 0px 5px 0px;
+            margin: 5px;
+            background-color: yellow;
+            /* background-clip: content-box; */
+        }
+
+    </style>
+
+
+    <p class="html-css-1">
+        This is a paragraph
+    </p>
+
+
+    <!-- HTML Links -->
+    <a href="https://www.facebook.com/" target="_self">target = _self</a> <br>
+    <a href="https://www.facebook.com/" target="_blank">target = _blank</a> <br>
+    <a href="https://www.facebook.com/" target="_parent">target = _parent</a> <br>
+    <a href="https://www.facebook.com/" target="_top">target = _top</a> <br>
+
+
+        <!-- Absolute URLs -->
+        <a href="begineer/css_box_sizing.html" target="_blank">Absolute URL</a>
+
+        <!-- Link to an email address -->
+        <a href="mailto:superman@gmail.com">Link to an email address</a>
+        <a class="link-css" href="https://github.com/vhtuananh020402">My GitHub Profile</a>
+
+
+        <style>
+            .link-css:link { /* unvisited link*/
+                color: blue;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+            
+            .link-css:visited {
+                color: red;
+                background-color: transparent;
+                text-decoration: line-through;
+            }
+
+            .link-css:hover {
+                color: green;
+                background-color: transparent;
+                text-decoration: line-through;
+            }
+            
+            .link-css:active {  /* Cliked */
+                color: yellow;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        </style>
+
+
+        <!-- Button as link -->
+        <button onclick="document.location='begineer/css_box_sizing.html'">Link button</button>
+
+        <!-- Bookmarks -->
+        <h2 id="chapter-2">Chapter 2</h2>
+        <a href="#chapter-2">Jump to chapter 2</a>
+        <a href="#heading-1">Jump to heading 1</a> <br>
+
+    
+    <!-- Images -->
+    <style>
+        #img-cute-cat {
+            width: 10%;
+
+            float: right;
+        }
+
+        #img-cute-dog {
+            width: 10%;
+            display: block;
+            float: left;
+        }
+    </style>
+
+    <p><strong>Float the image to the right</strong></p>
+    <p><img id="img-cute-cat" src="img/cutecat_2024.png" alt="The image of a cute cat"> The image will float to the right of the text.</p> <br>
+
+    <p><strong>Float the image to the left</strong></p>
+    <p><img id="img-cute-dog" src="img/cutedog_2024.png" alt="The image of a cute dog"> The image will float to the left of the text.</p> <br>
+
+
+    <p><strong>Image container</strong></p>
+    <div style="width: 400px; height: 120px;">
+        <img src="img/cutecat_2024.png" alt="" style="width: 20%; float: left;">
+        <img src="img/cutedog_2024.png" alt="" style="width: 20%; float: left;">
+    </div>
+
+
+    <h2><strong>ss</strong></h2>
+
+    <!-- HTML Image Map -->
+    <h2>Image Maps <a href="https://www.w3schools.com/html/html_images_imagemap.asp" target="_blank">(w3s link)</a></h2> 
+    <img src="img/workplace.jpg" alt="" usemap="#workmap" width="400" height="379">
+    
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="#chapter-2">
+    </map>
+
+
+    <!--    rect - defines a rectangular region
+            circle - defines a circular region
+            poly - defines a polygonal region
+            default - defines the entire region -->
+
+
+    <h2>Picture</h2>
+    If you have a small screen or device, it is not necessary to load a large image file. The browser will use the first <source> element with matching attribute values, and ignore any of the following elements.
+
+
+
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="">
+    </html>

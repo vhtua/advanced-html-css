@@ -1,0 +1,7 @@
+/* .table-simple-border {
+    width: 80%;
+} */
+
+.table-simple-border td,  .table-simple-border th{
+    border: 1px solid black;
+}

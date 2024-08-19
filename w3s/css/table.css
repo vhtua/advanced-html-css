@@ -5,3 +5,11 @@
 .table-simple-border td,  .table-simple-border th{
     border: 1px solid black;
 }
+
+.table-zebra-stripes tr:nth-child(even) {
+    background-color: rgb(213, 238, 238);
+}
+
+.table-vertical-zebra-stripes td:nth-child(even), .table-vertical-zebra-stripes th:nth-child(even) {
+    background-color: rgb(213, 238, 238);    
+}
